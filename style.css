@@ -113,7 +113,23 @@ section
     width:35vw;
     border-radius:100px;
     box-shadow: 0 0 3rem var(--main-color);
-    
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage
+{
+    0% 
+    {
+        transform:translateY(0);
+    }
+    50% 
+    {
+        transform:translateY(-2.4rem);
+    }
+    100% 
+    {
+        transform:translateY(0);
+    }
 }
 
 /* .home-content
@@ -584,5 +600,40 @@ span{
     .portfolio-container
     {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:450px)
+{
+    html
+    {
+        font-size:50%;
+    }
+
+    .contact form .input-box input
+    {
+        width:100%;
+    }
+}
+
+@media (max-width:365px)
+{
+    .home-img img
+    {
+        width:90vw;
+    }
+    .about-img img
+    {
+        width:90vw;
+    }
+
+    .footer
+    {
+        flex-direction: column-reverse;
+    }
+    .footer p
+    {
+        text-align: center;
+        margin-top:2rem;
     }
 }
