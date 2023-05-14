@@ -1,4 +1,4 @@
 # portfolio
 
-here is the priview of my portfolio which is deployed
+here is the preview of my portfolio deployed in versal 
 https://portfolio-donjoshi.vercel.app/
